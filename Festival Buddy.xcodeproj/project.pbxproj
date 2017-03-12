@@ -19,6 +19,12 @@
 		191623801E74E7DB0059CAE5 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1916237F1E74E7DB0059CAE5 /* InterfaceController.swift */; };
 		191623821E74E7DB0059CAE5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191623811E74E7DB0059CAE5 /* ExtensionDelegate.swift */; };
 		191623841E74E7DB0059CAE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 191623831E74E7DB0059CAE5 /* Assets.xcassets */; };
+		191623971E74EA270059CAE5 /* Festival.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191623961E74EA270059CAE5 /* Festival.swift */; };
+		191623991E74EDC70059CAE5 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191623981E74EDC70059CAE5 /* Stage.swift */; };
+		1916239B1E74EDD50059CAE5 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1916239A1E74EDD50059CAE5 /* Artist.swift */; };
+		1916239C1E74F93A0059CAE5 /* Festival.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191623961E74EA270059CAE5 /* Festival.swift */; };
+		1916239D1E74F93A0059CAE5 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191623981E74EDC70059CAE5 /* Stage.swift */; };
+		1916239E1E74F93A0059CAE5 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1916239A1E74EDD50059CAE5 /* Artist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +86,9 @@
 		191623811E74E7DB0059CAE5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		191623831E74E7DB0059CAE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		191623851E74E7DB0059CAE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		191623961E74EA270059CAE5 /* Festival.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Festival.swift; sourceTree = "<group>"; };
+		191623981E74EDC70059CAE5 /* Stage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
+		1916239A1E74EDD50059CAE5 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,11 +132,10 @@
 		1916235B1E74E7DB0059CAE5 /* Festival Buddy */ = {
 			isa = PBXGroup;
 			children = (
+				191623941E74E9720059CAE5 /* Model */,
+				191623931E74E95D0059CAE5 /* View */,
+				191623951E74E97F0059CAE5 /* View Controllers */,
 				1916235C1E74E7DB0059CAE5 /* AppDelegate.swift */,
-				1916235E1E74E7DB0059CAE5 /* ViewController.swift */,
-				191623601E74E7DB0059CAE5 /* Main.storyboard */,
-				191623631E74E7DB0059CAE5 /* Assets.xcassets */,
-				191623651E74E7DB0059CAE5 /* LaunchScreen.storyboard */,
 				191623681E74E7DB0059CAE5 /* Info.plist */,
 			);
 			path = "Festival Buddy";
@@ -152,6 +160,34 @@
 				191623851E74E7DB0059CAE5 /* Info.plist */,
 			);
 			path = "Festival Buddy WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		191623931E74E95D0059CAE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				191623631E74E7DB0059CAE5 /* Assets.xcassets */,
+				191623651E74E7DB0059CAE5 /* LaunchScreen.storyboard */,
+				191623601E74E7DB0059CAE5 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		191623941E74E9720059CAE5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				191623961E74EA270059CAE5 /* Festival.swift */,
+				191623981E74EDC70059CAE5 /* Stage.swift */,
+				1916239A1E74EDD50059CAE5 /* Artist.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		191623951E74E97F0059CAE5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1916235E1E74E7DB0059CAE5 /* ViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +330,9 @@
 			files = (
 				1916235F1E74E7DB0059CAE5 /* ViewController.swift in Sources */,
 				1916235D1E74E7DB0059CAE5 /* AppDelegate.swift in Sources */,
+				191623991E74EDC70059CAE5 /* Stage.swift in Sources */,
+				1916239B1E74EDD50059CAE5 /* Artist.swift in Sources */,
+				191623971E74EA270059CAE5 /* Festival.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +342,9 @@
 			files = (
 				191623821E74E7DB0059CAE5 /* ExtensionDelegate.swift in Sources */,
 				191623801E74E7DB0059CAE5 /* InterfaceController.swift in Sources */,
+				1916239D1E74F93A0059CAE5 /* Stage.swift in Sources */,
+				1916239E1E74F93A0059CAE5 /* Artist.swift in Sources */,
+				1916239C1E74F93A0059CAE5 /* Festival.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
