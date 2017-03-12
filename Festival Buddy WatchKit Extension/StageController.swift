@@ -57,14 +57,15 @@ class StageController: WKInterfaceController {
         let itemRows = NSIndexSet(indexesIn: NSRange(location: rows + 1,
                                                      length: artists.count))
         table.insertRows(at: itemRows as IndexSet, withRowType:
-            "StageRowType")
+            "ArtistRowType")
         
         
         for i in rows..<table.numberOfRows {
             let controller = table.rowController(at: i)
             
             if let controller = controller as? HeaderRowController {
-                controller.dayLabel.setText("March \(day)th")
+
+                controller.headerLabel.setText("March \(day)th")
             } else if let controller = controller as? ArtistRowController {
                 let artist = artists[i - rows - 1]
                 controller.artistLabel.setText(artist.name)

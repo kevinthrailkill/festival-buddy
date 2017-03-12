@@ -10,5 +10,5 @@ import WatchKit
 
 class HeaderRowController: NSObject {
 
-    @IBOutlet var dayLabel: WKInterfaceLabel!
+    @IBOutlet var headerLabel: WKInterfaceLabel!
 }

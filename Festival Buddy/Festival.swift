@@ -31,6 +31,29 @@ class Festival  {
     }
     
     
+    func getArtistsPlayingNow() -> (timeString: String, artistsArray: [Artist]){
+        
+        var artists : [Artist] = []
+        let calendar = Calendar.current
+
+        
+        
+        for artist in self.allArtists {
+            
+            let startDay = calendar.component(.day, from: artist.startTime)
+            let startHr = calendar.component(.hour, from: artist.startTime)
+
+            
+            if(startDay == 24 && startHr == 7){
+                artists.append(artist)
+            }
+        }
+        
+        
+        return ("time holder", artists)
+    }
+    
+    
     
     
     

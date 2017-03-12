@@ -32,6 +32,7 @@ func generateQueensDomain() -> Stage {
     fridayDateComponent.month = 4
     fridayDateComponent.day = 24
     fridayDateComponent.hour = 7
+    fridayDateComponent.timeZone = TimeZone(abbreviation: "PST")
     let friday = userCalendar.date(from: fridayDateComponent)
     
     var artist: Artist = Artist(artistName: "Audien", sTime: friday!, eTime: friday!, stage: "Queen's Domain")
@@ -68,7 +69,7 @@ func generateQueensDomain() -> Stage {
     saturdayDateComponent.month = 4
     saturdayDateComponent.day = 25
     saturdayDateComponent.hour = 8
-
+    saturdayDateComponent.timeZone = TimeZone(abbreviation: "PST")
     let saturday = userCalendar.date(from: saturdayDateComponent)
     
     artist = Artist(artistName: "Borgeous", sTime: saturday!, eTime: saturday!, stage: "Queen's Domain")
@@ -117,6 +118,7 @@ func generateUpsideDownHouse() -> Stage {
     fridayDateComponent.year = 2017
     fridayDateComponent.month = 4
     fridayDateComponent.day = 24
+    fridayDateComponent.timeZone = TimeZone(abbreviation: "PST")
     let friday = userCalendar.date(from: fridayDateComponent)
     
     var artist: Artist = Artist(artistName: "Aazar", sTime: friday!, eTime: friday!, stage: "Upside Down House")
@@ -143,6 +145,7 @@ func generateUpsideDownHouse() -> Stage {
     saturdayDateComponent.year = 2017
     saturdayDateComponent.month = 4
     saturdayDateComponent.day = 25
+    saturdayDateComponent.timeZone = TimeZone(abbreviation: "PST")
     let saturday = userCalendar.date(from: saturdayDateComponent)
     
     artist = Artist(artistName: "Bot", sTime: saturday!, eTime: saturday!, stage: "Upside Down House")
@@ -174,6 +177,7 @@ func generateAquarium() -> Stage {
     fridayDateComponent.year = 2017
     fridayDateComponent.month = 4
     fridayDateComponent.day = 24
+    fridayDateComponent.timeZone = TimeZone(abbreviation: "PST")
     let friday = userCalendar.date(from: fridayDateComponent)
     
     var artist: Artist = Artist(artistName: "Angelz", sTime: friday!, eTime: friday!, stage: "The Aquarium")
@@ -202,6 +206,7 @@ func generateAquarium() -> Stage {
     saturdayDateComponent.year = 2017
     saturdayDateComponent.month = 4
     saturdayDateComponent.day = 25
+    saturdayDateComponent.timeZone = TimeZone(abbreviation: "PST")
     let saturday = userCalendar.date(from: saturdayDateComponent)
     
     artist = Artist(artistName: "Audien", sTime: saturday!, eTime: saturday!, stage: "The Aquarium")
@@ -240,6 +245,7 @@ func generateCheshireCove() -> Stage {
     fridayDateComponent.year = 2017
     fridayDateComponent.month = 4
     fridayDateComponent.day = 24
+    fridayDateComponent.timeZone = TimeZone(abbreviation: "PST")
     let friday = userCalendar.date(from: fridayDateComponent)
     
     var artist: Artist = Artist(artistName: "Astrix", sTime: friday!, eTime: friday!, stage: "Cheshire Cove")
@@ -272,6 +278,7 @@ func generateCheshireCove() -> Stage {
     saturdayDateComponent.year = 2017
     saturdayDateComponent.month = 4
     saturdayDateComponent.day = 25
+    saturdayDateComponent.timeZone = TimeZone(abbreviation: "PST")
     let saturday = userCalendar.date(from: saturdayDateComponent)
     
     artist = Artist(artistName: "Aly & Fila", sTime: saturday!, eTime: saturday!, stage: "Cheshire Cove")
@@ -309,6 +316,7 @@ func generateOuterRealm() -> Stage {
     fridayDateComponent.year = 2017
     fridayDateComponent.month = 4
     fridayDateComponent.day = 24
+    fridayDateComponent.timeZone = TimeZone(abbreviation: "PST")
     let friday = userCalendar.date(from: fridayDateComponent)
     
     var artist: Artist = Artist(artistName: "Alison Wonderland", sTime: friday!, eTime: friday!, stage: "Outer Realm")
@@ -343,6 +351,7 @@ func generateOuterRealm() -> Stage {
     saturdayDateComponent.year = 2017
     saturdayDateComponent.month = 4
     saturdayDateComponent.day = 25
+    saturdayDateComponent.timeZone = TimeZone(abbreviation: "PST")
     let saturday = userCalendar.date(from: saturdayDateComponent)
     
     artist = Artist(artistName: "12th Planet", sTime: saturday!, eTime: saturday!, stage: "Outer Realm")

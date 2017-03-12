@@ -18,7 +18,26 @@ class WhosPlayingNowController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        // Configure interface objects here.
+        if let festival = context as? Festival {
+            
+            let artistsNow = festival.getArtistsPlayingNow()
+            
+            timeLabel.setText(artistsNow.timeString)
+            
+            var map = [String: [Artist]]()
+            for artist in artistsNow.artistsArray {
+                
+                var arr = map[artist.stageName] ?? [Artist]()
+                arr.append(artist)
+                map[artist.stageName] = arr
+                
+            }
+            
+            for(stage, artists) in map {
+                add(withStage: stage, artists: artists)
+            }
+            
+        }
     }
 
     override func willActivate() {
@@ -33,7 +52,7 @@ class WhosPlayingNowController: WKInterfaceController {
     
     
     
-    func add(withDay day: Int, artists: [Artist]) {
+    func add(withStage stage: String, artists: [Artist]) {
         
         let calendar = Calendar.current
         let rows = table.numberOfRows
@@ -42,14 +61,14 @@ class WhosPlayingNowController: WKInterfaceController {
         let itemRows = NSIndexSet(indexesIn: NSRange(location: rows + 1,
                                                      length: artists.count))
         table.insertRows(at: itemRows as IndexSet, withRowType:
-            "StageRowType")
+            "ArtistRowType")
         
         
         for i in rows..<table.numberOfRows {
             let controller = table.rowController(at: i)
             
             if let controller = controller as? HeaderRowController {
-                controller.dayLabel.setText("March \(day)th")
+                controller.headerLabel.setText(stage)
             } else if let controller = controller as? ArtistRowController {
                 let artist = artists[i - rows - 1]
                 controller.artistLabel.setText(artist.name)

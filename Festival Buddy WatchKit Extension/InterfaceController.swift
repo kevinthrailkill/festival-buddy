@@ -46,9 +46,7 @@ class InterfaceController: WKInterfaceController {
     override func contextForSegue(withIdentifier segueIdentifier: String) -> Any? {
         if(segueIdentifier == "whosplayingnowsegue"){
             
-            
-            
-            return festival.allArtists
+            return festival
         }
         
         return nil

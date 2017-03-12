@@ -32,10 +32,10 @@
             </objects>
             <point key="canvasLocation" x="-68" y="53"/>
         </scene>
-        <!--Whos Playing Now Controller-->
+        <!--Now-->
         <scene sceneID="jFG-0K-9OQ">
             <objects>
-                <controller animationDuration="3" id="ge4-Nr-TeR" customClass="WhosPlayingNowController" customModule="Festival_Buddy_WatchKit_Extension">
+                <controller title="Now" animationDuration="3" id="ge4-Nr-TeR" customClass="WhosPlayingNowController" customModule="Festival_Buddy_WatchKit_Extension">
                     <items>
                         <group width="1" alignment="left" id="a3B-C7-8Hc">
                             <items>
@@ -46,7 +46,7 @@
                         </group>
                         <table alignment="left" id="vj8-UZ-bG6">
                             <items>
-                                <tableRow identifier="artistRowType" selectable="NO" id="NnJ-O7-FWT" customClass="ArtistRowController" customModule="Festival_Buddy_WatchKit_Extension">
+                                <tableRow identifier="ArtistRowType" selectable="NO" id="NnJ-O7-FWT" customClass="ArtistRowController" customModule="Festival_Buddy_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" layout="vertical" id="BRV-T6-sNl">
                                         <items>
                                             <label alignment="left" text="Artist Name" numberOfLines="0" id="pes-js-CHO">
@@ -63,7 +63,7 @@
                                         <outlet property="setTimeLabel" destination="9qD-oa-BqM" id="Cty-es-9xz"/>
                                     </connections>
                                 </tableRow>
-                                <tableRow identifier="headerType" selectable="NO" id="VKG-dh-PBB" customClass="HeaderRowController" customModule="Festival_Buddy_WatchKit_Extension">
+                                <tableRow identifier="HeaderRowType" selectable="NO" id="VKG-dh-PBB" customClass="HeaderRowController" customModule="Festival_Buddy_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="19" alignment="left" id="7c2-Gs-OyH">
                                         <items>
                                             <label alignment="left" verticalAlignment="center" text="Stage" id="0rM-hw-oYA">
@@ -72,7 +72,7 @@
                                         </items>
                                     </group>
                                     <connections>
-                                        <outlet property="dayLabel" destination="0rM-hw-oYA" id="hll-rJ-r1f"/>
+                                        <outlet property="headerLabel" destination="0rM-hw-oYA" id="Ila-Lf-Jt1"/>
                                     </connections>
                                 </tableRow>
                             </items>
@@ -96,7 +96,7 @@
                         </label>
                         <table alignment="left" id="GX2-mI-lgB">
                             <items>
-                                <tableRow identifier="StageRowType" selectable="NO" id="A6u-d1-LY9" customClass="ArtistRowController" customModule="Festival_Buddy_WatchKit_Extension">
+                                <tableRow identifier="ArtistRowType" selectable="NO" id="A6u-d1-LY9" customClass="ArtistRowController" customModule="Festival_Buddy_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="ETW-Wg-Cvu">
                                         <items>
                                             <label alignment="left" text="Artist Name" numberOfLines="0" id="SWy-Tv-uBp">
@@ -122,7 +122,7 @@
                                         </items>
                                     </group>
                                     <connections>
-                                        <outlet property="dayLabel" destination="ipT-FI-ji7" id="YmR-0w-gcm"/>
+                                        <outlet property="headerLabel" destination="ipT-FI-ji7" id="m6d-w9-o9L"/>
                                     </connections>
                                 </tableRow>
                             </items>
