@@ -13,12 +13,14 @@ class Artist {
     var name: String
     var startTime: Date
     var endTime: Date
+    var stageName: String
     var favorite: Bool?
     
-    init(artistName: String, sTime: Date, eTime: Date) {
+    init(artistName: String, sTime: Date, eTime: Date, stage: String) {
         name = artistName
         startTime = sTime
         endTime = eTime
+        stageName = stage
     }
     
 }

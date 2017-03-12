@@ -11,9 +11,24 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
+    
+    
+    var stages: [Stage] = []
+    let festival = generateMockFestival()
+    
+    @IBAction func goToStages() {
+        
+        let names: [String] = stages.map { c in "Stages" }
+        presentController(withNames: names, contexts: stages)
+        
+    }
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
+        
+        
+        
+        stages = festival.stages
         
         // Configure interface objects here.
     }
@@ -26,6 +41,18 @@ class InterfaceController: WKInterfaceController {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+    
+    override func contextForSegue(withIdentifier segueIdentifier: String) -> Any? {
+        if(segueIdentifier == "whosplayingnowsegue"){
+            
+            
+            
+            return festival.allArtists
+        }
+        
+        return nil
+        
     }
 
 }

@@ -1,15 +1,141 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Festival_Buddy_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="Festival Name" textAlignment="center" id="pAi-pS-f4X">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <button width="1" alignment="left" title="Stages" id="geN-66-FiR">
+                            <connections>
+                                <action selector="goToStages" destination="AgC-eL-Hgc" id="5FZ-Jb-ZxZ"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Who's Playing Now" id="iKc-je-axG">
+                            <connections>
+                                <segue destination="ge4-Nr-TeR" kind="push" identifier="whosplayingnowsegue" id="H6I-ep-iMJ"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="-68" y="53"/>
+        </scene>
+        <!--Whos Playing Now Controller-->
+        <scene sceneID="jFG-0K-9OQ">
+            <objects>
+                <controller animationDuration="3" id="ge4-Nr-TeR" customClass="WhosPlayingNowController" customModule="Festival_Buddy_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="a3B-C7-8Hc">
+                            <items>
+                                <label height="20" alignment="center" text="Time" id="iKf-rJ-bwD">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                            </items>
+                        </group>
+                        <table alignment="left" id="vj8-UZ-bG6">
+                            <items>
+                                <tableRow identifier="artistRowType" selectable="NO" id="NnJ-O7-FWT" customClass="ArtistRowController" customModule="Festival_Buddy_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" layout="vertical" id="BRV-T6-sNl">
+                                        <items>
+                                            <label alignment="left" text="Artist Name" numberOfLines="0" id="pes-js-CHO">
+                                                <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                            </label>
+                                            <label alignment="left" text="Set Time" numberOfLines="0" id="9qD-oa-BqM">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="artistLabel" destination="pes-js-CHO" id="16r-CJ-0xL"/>
+                                        <outlet property="setTimeLabel" destination="9qD-oa-BqM" id="Cty-es-9xz"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="headerType" selectable="NO" id="VKG-dh-PBB" customClass="HeaderRowController" customModule="Festival_Buddy_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="19" alignment="left" id="7c2-Gs-OyH">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Stage" id="0rM-hw-oYA">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="dayLabel" destination="0rM-hw-oYA" id="hll-rJ-r1f"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="vj8-UZ-bG6" id="qi9-JE-qod"/>
+                        <outlet property="timeLabel" destination="iKf-rJ-bwD" id="GeS-Wa-2WC"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="181" y="53"/>
+        </scene>
+        <!--⇜-->
+        <scene sceneID="Btd-bf-8Xw">
+            <objects>
+                <controller identifier="Stages" title="⇜" animationDuration="3" id="d2b-Tp-4Yb" customClass="StageController" customModule="Festival_Buddy_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Stage Name" textAlignment="center" numberOfLines="0" id="5Ln-Wi-YPL">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <table alignment="left" id="GX2-mI-lgB">
+                            <items>
+                                <tableRow identifier="StageRowType" selectable="NO" id="A6u-d1-LY9" customClass="ArtistRowController" customModule="Festival_Buddy_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="ETW-Wg-Cvu">
+                                        <items>
+                                            <label alignment="left" text="Artist Name" numberOfLines="0" id="SWy-Tv-uBp">
+                                                <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                            </label>
+                                            <label alignment="left" text="Set Time" id="SyC-Ci-EbJ">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="artistLabel" destination="SWy-Tv-uBp" id="OWM-WL-EcZ"/>
+                                        <outlet property="setTimeLabel" destination="SyC-Ci-EbJ" id="SQ4-AJ-Az8"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="HeaderRowType" selectable="NO" id="OTO-RY-SgU" customClass="HeaderRowController" customModule="Festival_Buddy_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="ssk-qZ-Fcw">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Saturday 25th" id="ipT-FI-ji7">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="dayLabel" destination="ipT-FI-ji7" id="YmR-0w-gcm"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <edgeInsets key="margins" left="1" right="1" top="5" bottom="5"/>
+                    <connections>
+                        <outlet property="stageNameLabel" destination="5Ln-Wi-YPL" id="gT0-H2-yOb"/>
+                        <outlet property="table" destination="GX2-mI-lgB" id="yTg-Vv-QKA"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-68" y="-247"/>
         </scene>
     </scenes>
 </document>
