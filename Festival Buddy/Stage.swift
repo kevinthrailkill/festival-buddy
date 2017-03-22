@@ -356,7 +356,7 @@ func generateCheshireCove() -> Stage {
     
     fridayDateComponent.hour = 1
     fridayDateComponent.minute = 45
-    var friday = userCalendar.date(from: fridayDateComponent)
+    let friday = userCalendar.date(from: fridayDateComponent)
     var artist: Artist = Artist(artistName: "Astrix", sTime: friday!, eTime: friday!, stage: "Cheshire Cove")
     artists.append(artist)
     

@@ -15,17 +15,23 @@ class InterfaceController: WKInterfaceController {
     
     var stages: [Stage] = []
     let festival = generateMockFestival()
+    let festivalJSON = FestivalJSON()
+    
     
     @IBAction func goToStages() {
         
-        let names: [String] = stages.map { c in "Stages" }
-        presentController(withNames: names, contexts: stages)
+        let names: [String] = festivalJSON.stages.map { c in "Stages" }
+        presentController(withNames: names, contexts: festivalJSON.stages)
         
     }
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
+        
+        festivalJSON.getStageToArtistMap()
+
+       // print(getStageToArtistMap)
         
         
         stages = festival.stages

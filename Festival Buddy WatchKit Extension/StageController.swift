@@ -22,15 +22,15 @@ class StageController: WKInterfaceController {
         let calendar = Calendar.current
         var keys = [Int]()
         
-        if let stage = context as? Stage {
+        if let stage = context as? StageJSON {
             
-            stageNameLabel.setText(stage.name)
+            stageNameLabel.setText(stage.stageName!)
             
-            var map = [Int: [Artist]]()
+            var map = [Int: [ArtistJSON]]()
             for artist in stage.artists {
                 
-                let startDay = calendar.component(.day, from: artist.startTime)
-                var arr = map[startDay] ?? [Artist]()
+                let startDay = calendar.component(.day, from: artist.startTime!)
+                var arr = map[startDay] ?? [ArtistJSON]()
                 arr.append(artist)
                 map[startDay] = arr
                 
@@ -48,7 +48,7 @@ class StageController: WKInterfaceController {
     }
     
     
-    func add(withDay day: Int, artists: [Artist]) {
+    func add(withDay day: Int, artists: [ArtistJSON]) {
         
         let calendar = Calendar.current
         let rows = table.numberOfRows
@@ -68,10 +68,10 @@ class StageController: WKInterfaceController {
                 controller.headerLabel.setText("March \(day)th")
             } else if let controller = controller as? ArtistRowController {
                 let artist = artists[i - rows - 1]
-                controller.artistLabel.setText(artist.name)
+                controller.artistLabel.setText(artist.artistName!)
                 
-                let startHr = calendar.component(.hour, from: artist.startTime)
-                let endHr = calendar.component(.hour, from: artist.endTime)
+                let startHr = calendar.component(.hour, from: artist.startTime!)
+                let endHr = calendar.component(.hour, from: artist.endTime!)
                 
                 controller.setTimeLabel.setText("\(startHr) - \(endHr)")
             }

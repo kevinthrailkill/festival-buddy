@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190D09301E82EA4500F88145 /* FestivalJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190D092F1E82EA4500F88145 /* FestivalJSON.swift */; };
+		190D09321E82EA8D00F88145 /* StageJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190D09311E82EA8D00F88145 /* StageJSON.swift */; };
+		190D09341E82EB4200F88145 /* ArtistJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190D09331E82EB4200F88145 /* ArtistJSON.swift */; };
+		190D09351E82ECA400F88145 /* FestivalJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190D092F1E82EA4500F88145 /* FestivalJSON.swift */; };
+		190D09361E82ECA400F88145 /* ArtistJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190D09331E82EB4200F88145 /* ArtistJSON.swift */; };
+		190D09371E82ECA400F88145 /* StageJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190D09311E82EA8D00F88145 /* StageJSON.swift */; };
+		190D09391E82ECCC00F88145 /* beyond.json in Resources */ = {isa = PBXBuildFile; fileRef = 190D09381E82ECCC00F88145 /* beyond.json */; };
+		190D093A1E82ECCC00F88145 /* beyond.json in Resources */ = {isa = PBXBuildFile; fileRef = 190D09381E82ECCC00F88145 /* beyond.json */; };
 		1916235D1E74E7DB0059CAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1916235C1E74E7DB0059CAE5 /* AppDelegate.swift */; };
 		1916235F1E74E7DB0059CAE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1916235E1E74E7DB0059CAE5 /* ViewController.swift */; };
 		191623621E74E7DB0059CAE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191623601E74E7DB0059CAE5 /* Main.storyboard */; };
@@ -29,6 +37,9 @@
 		191623A21E74FD870059CAE5 /* ArtistRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191623A11E74FD870059CAE5 /* ArtistRowController.swift */; };
 		191623A41E750D630059CAE5 /* HeaderRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191623A31E750D630059CAE5 /* HeaderRowController.swift */; };
 		191623A61E7519690059CAE5 /* WhosPlayingNowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191623A51E7519690059CAE5 /* WhosPlayingNowController.swift */; };
+		1CC1C9C97C0CFCB5105E0F62 /* Pods_Festival_Buddy_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D74F88F9FEEEF0DE716CFB /* Pods_Festival_Buddy_WatchKit_Extension.framework */; };
+		3361F26C768EE910157FC7F5 /* Pods_Festival_Buddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE7513452DD69702FA28D0D /* Pods_Festival_Buddy.framework */; };
+		7DFBEC44E35BA7E608AF99B6 /* Pods_Festival_Buddy_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E1B17D18DB6EDA27FD3108 /* Pods_Festival_Buddy_WatchKit_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +85,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		07E34C858899D055FD73DB18 /* Pods-Festival Buddy WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Festival Buddy WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Festival Buddy WatchKit App/Pods-Festival Buddy WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		190D092F1E82EA4500F88145 /* FestivalJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FestivalJSON.swift; sourceTree = "<group>"; };
+		190D09311E82EA8D00F88145 /* StageJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageJSON.swift; sourceTree = "<group>"; };
+		190D09331E82EB4200F88145 /* ArtistJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistJSON.swift; sourceTree = "<group>"; };
+		190D09381E82ECCC00F88145 /* beyond.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beyond.json; sourceTree = "<group>"; };
 		191623591E74E7DB0059CAE5 /* Festival Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Festival Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1916235C1E74E7DB0059CAE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1916235E1E74E7DB0059CAE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +113,14 @@
 		191623A11E74FD870059CAE5 /* ArtistRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistRowController.swift; sourceTree = "<group>"; };
 		191623A31E750D630059CAE5 /* HeaderRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderRowController.swift; sourceTree = "<group>"; };
 		191623A51E7519690059CAE5 /* WhosPlayingNowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhosPlayingNowController.swift; sourceTree = "<group>"; };
+		1C6772000BBD50219F579E48 /* Pods-Festival Buddy WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Festival Buddy WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Festival Buddy WatchKit App/Pods-Festival Buddy WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		1DE7513452DD69702FA28D0D /* Pods_Festival_Buddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Festival_Buddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61ADFFA60408333EAC54517F /* Pods-Festival Buddy WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Festival Buddy WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Festival Buddy WatchKit Extension/Pods-Festival Buddy WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		65D74F88F9FEEEF0DE716CFB /* Pods_Festival_Buddy_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Festival_Buddy_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF305C0BF8FD632B3DD1CBE /* Pods-Festival Buddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Festival Buddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Festival Buddy/Pods-Festival Buddy.debug.xcconfig"; sourceTree = "<group>"; };
+		D474E847C730B3681F299CE3 /* Pods-Festival Buddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Festival Buddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Festival Buddy/Pods-Festival Buddy.release.xcconfig"; sourceTree = "<group>"; };
+		D7E1B17D18DB6EDA27FD3108 /* Pods_Festival_Buddy_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Festival_Buddy_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE475C80A514455F7FC88310 /* Pods-Festival Buddy WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Festival Buddy WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Festival Buddy WatchKit Extension/Pods-Festival Buddy WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3361F26C768EE910157FC7F5 /* Pods_Festival_Buddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,12 +136,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC1C9C97C0CFCB5105E0F62 /* Pods_Festival_Buddy_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0CF1B6605C0B8229740721B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DFBEC44E35BA7E608AF99B6 /* Pods_Festival_Buddy_WatchKit_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		190D092E1E82E9D400F88145 /* Model-JSON */ = {
+			isa = PBXGroup;
+			children = (
+				190D09381E82ECCC00F88145 /* beyond.json */,
+				190D092F1E82EA4500F88145 /* FestivalJSON.swift */,
+				190D09331E82EB4200F88145 /* ArtistJSON.swift */,
+				190D09311E82EA8D00F88145 /* StageJSON.swift */,
+			);
+			name = "Model-JSON";
+			sourceTree = "<group>";
+		};
 		191623501E74E7DA0059CAE5 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +169,8 @@
 				1916236F1E74E7DB0059CAE5 /* Festival Buddy WatchKit App */,
 				1916237E1E74E7DB0059CAE5 /* Festival Buddy WatchKit Extension */,
 				1916235A1E74E7DB0059CAE5 /* Products */,
+				9526A7AF987E243CC16E96DE /* Pods */,
+				C98932351B5A71B92C59350E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +187,7 @@
 		1916235B1E74E7DB0059CAE5 /* Festival Buddy */ = {
 			isa = PBXGroup;
 			children = (
+				190D092E1E82E9D400F88145 /* Model-JSON */,
 				191623941E74E9720059CAE5 /* Model */,
 				191623931E74E95D0059CAE5 /* View */,
 				191623951E74E97F0059CAE5 /* View Controllers */,
@@ -202,6 +250,29 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
+		9526A7AF987E243CC16E96DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEF305C0BF8FD632B3DD1CBE /* Pods-Festival Buddy.debug.xcconfig */,
+				D474E847C730B3681F299CE3 /* Pods-Festival Buddy.release.xcconfig */,
+				1C6772000BBD50219F579E48 /* Pods-Festival Buddy WatchKit App.debug.xcconfig */,
+				07E34C858899D055FD73DB18 /* Pods-Festival Buddy WatchKit App.release.xcconfig */,
+				61ADFFA60408333EAC54517F /* Pods-Festival Buddy WatchKit Extension.debug.xcconfig */,
+				DE475C80A514455F7FC88310 /* Pods-Festival Buddy WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C98932351B5A71B92C59350E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DE7513452DD69702FA28D0D /* Pods_Festival_Buddy.framework */,
+				D7E1B17D18DB6EDA27FD3108 /* Pods_Festival_Buddy_WatchKit_App.framework */,
+				65D74F88F9FEEEF0DE716CFB /* Pods_Festival_Buddy_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -209,10 +280,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 191623901E74E7DB0059CAE5 /* Build configuration list for PBXNativeTarget "Festival Buddy" */;
 			buildPhases = (
+				8524F7282D34E79038BDF420 /* [CP] Check Pods Manifest.lock */,
 				191623551E74E7DA0059CAE5 /* Sources */,
 				191623561E74E7DA0059CAE5 /* Frameworks */,
 				191623571E74E7DA0059CAE5 /* Resources */,
 				1916238F1E74E7DB0059CAE5 /* Embed Watch Content */,
+				8BC3E37F66B0F7F6905DF742 /* [CP] Embed Pods Frameworks */,
+				ED8E4EB8904F53762897B01A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,8 +302,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1916238C1E74E7DB0059CAE5 /* Build configuration list for PBXNativeTarget "Festival Buddy WatchKit App" */;
 			buildPhases = (
+				615B19A70CF7EB8069F67CD5 /* [CP] Check Pods Manifest.lock */,
 				191623691E74E7DB0059CAE5 /* Resources */,
 				1916238B1E74E7DB0059CAE5 /* Embed App Extensions */,
+				E0CF1B6605C0B8229740721B /* Frameworks */,
+				D928059FC140CDF275E66B83 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,9 +322,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 191623881E74E7DB0059CAE5 /* Build configuration list for PBXNativeTarget "Festival Buddy WatchKit Extension" */;
 			buildPhases = (
+				8CF344004D8EB87469FA068C /* [CP] Check Pods Manifest.lock */,
 				191623761E74E7DB0059CAE5 /* Sources */,
 				191623771E74E7DB0059CAE5 /* Frameworks */,
 				191623781E74E7DB0059CAE5 /* Resources */,
+				877D55BAB615E3B1DD042833 /* [CP] Embed Pods Frameworks */,
+				3601E59612CF6DBA9551284B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,6 +390,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				190D09391E82ECCC00F88145 /* beyond.json in Resources */,
 				191623671E74E7DB0059CAE5 /* LaunchScreen.storyboard in Resources */,
 				191623641E74E7DB0059CAE5 /* Assets.xcassets in Resources */,
 				191623621E74E7DB0059CAE5 /* Main.storyboard in Resources */,
@@ -329,11 +410,135 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				190D093A1E82ECCC00F88145 /* beyond.json in Resources */,
 				191623841E74E7DB0059CAE5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3601E59612CF6DBA9551284B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Festival Buddy WatchKit Extension/Pods-Festival Buddy WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		615B19A70CF7EB8069F67CD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8524F7282D34E79038BDF420 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		877D55BAB615E3B1DD042833 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Festival Buddy WatchKit Extension/Pods-Festival Buddy WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BC3E37F66B0F7F6905DF742 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Festival Buddy/Pods-Festival Buddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CF344004D8EB87469FA068C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D928059FC140CDF275E66B83 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Festival Buddy WatchKit App/Pods-Festival Buddy WatchKit App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED8E4EB8904F53762897B01A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Festival Buddy/Pods-Festival Buddy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		191623551E74E7DA0059CAE5 /* Sources */ = {
@@ -341,10 +546,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1916235F1E74E7DB0059CAE5 /* ViewController.swift in Sources */,
+				190D09321E82EA8D00F88145 /* StageJSON.swift in Sources */,
 				1916235D1E74E7DB0059CAE5 /* AppDelegate.swift in Sources */,
 				191623991E74EDC70059CAE5 /* Stage.swift in Sources */,
+				190D09341E82EB4200F88145 /* ArtistJSON.swift in Sources */,
 				1916239B1E74EDD50059CAE5 /* Artist.swift in Sources */,
 				191623971E74EA270059CAE5 /* Festival.swift in Sources */,
+				190D09301E82EA4500F88145 /* FestivalJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,15 +560,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				190D09371E82ECA400F88145 /* StageJSON.swift in Sources */,
 				191623A01E74FB9F0059CAE5 /* StageController.swift in Sources */,
 				191623A41E750D630059CAE5 /* HeaderRowController.swift in Sources */,
 				191623821E74E7DB0059CAE5 /* ExtensionDelegate.swift in Sources */,
 				191623A61E7519690059CAE5 /* WhosPlayingNowController.swift in Sources */,
 				191623A21E74FD870059CAE5 /* ArtistRowController.swift in Sources */,
+				190D09351E82ECA400F88145 /* FestivalJSON.swift in Sources */,
 				191623801E74E7DB0059CAE5 /* InterfaceController.swift in Sources */,
 				1916239D1E74F93A0059CAE5 /* Stage.swift in Sources */,
 				1916239E1E74F93A0059CAE5 /* Artist.swift in Sources */,
 				1916239C1E74F93A0059CAE5 /* Festival.swift in Sources */,
+				190D09361E82ECA400F88145 /* ArtistJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +711,7 @@
 		};
 		191623891E74E7DB0059CAE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61ADFFA60408333EAC54517F /* Pods-Festival Buddy WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				DEVELOPMENT_TEAM = YUYDGGZ6SW;
@@ -517,6 +729,7 @@
 		};
 		1916238A1E74E7DB0059CAE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE475C80A514455F7FC88310 /* Pods-Festival Buddy WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				DEVELOPMENT_TEAM = YUYDGGZ6SW;
@@ -534,6 +747,7 @@
 		};
 		1916238D1E74E7DB0059CAE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C6772000BBD50219F579E48 /* Pods-Festival Buddy WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -552,6 +766,7 @@
 		};
 		1916238E1E74E7DB0059CAE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07E34C858899D055FD73DB18 /* Pods-Festival Buddy WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -570,6 +785,7 @@
 		};
 		191623911E74E7DB0059CAE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEF305C0BF8FD632B3DD1CBE /* Pods-Festival Buddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YUYDGGZ6SW;
@@ -583,6 +799,7 @@
 		};
 		191623921E74E7DB0059CAE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D474E847C730B3681F299CE3 /* Pods-Festival Buddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YUYDGGZ6SW;
@@ -613,6 +830,7 @@
 				1916238A1E74E7DB0059CAE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1916238C1E74E7DB0059CAE5 /* Build configuration list for PBXNativeTarget "Festival Buddy WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -621,6 +839,7 @@
 				1916238E1E74E7DB0059CAE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		191623901E74E7DB0059CAE5 /* Build configuration list for PBXNativeTarget "Festival Buddy" */ = {
 			isa = XCConfigurationList;
@@ -629,6 +848,7 @@
 				191623921E74E7DB0059CAE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
