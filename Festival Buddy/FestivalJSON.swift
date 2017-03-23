@@ -32,7 +32,7 @@ class FestivalJSON {
                             for (_, artist) in subJson["Events"] {
                                 
                                 if(artist["Title"] != JSON.null && artist["StageId"] != JSON.null){
-                                    print(artist)
+                                  //  print(artist)
                                     let artistParsed = ArtistJSON(json: artist)
                                     artists.append(artistParsed)
                                 }
@@ -41,7 +41,7 @@ class FestivalJSON {
                         }else if(key == "14"){
                             //getstages
                             for (_, stage) in subJson["Stages"] {
-                                print(stage)
+                              //  print(stage)
                                 let stageParsed = StageJSON(json: stage)
                                 stages.append(stageParsed)
                             }
@@ -74,6 +74,7 @@ class FestivalJSON {
         
         for stage in self.stages {
             stage.artists = artistMap[stage.stageID!]!
+            stage.artists.sort { $0.startTime! < $1.startTime! }
         }
         
     }

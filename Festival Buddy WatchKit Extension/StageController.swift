@@ -41,7 +41,10 @@ class StageController: WKInterfaceController {
             }
             
             for d in keys {
-                add(withDay: d, artists: map[d]!)
+                //change to current day check
+                if(d == 24) {
+                    add(withDay: d, artists: map[d]!)
+                }
             }
         
         }
@@ -50,7 +53,6 @@ class StageController: WKInterfaceController {
     
     func add(withDay day: Int, artists: [ArtistJSON]) {
         
-        let calendar = Calendar.current
         let rows = table.numberOfRows
         table.insertRows(at: NSIndexSet(index: rows) as IndexSet, withRowType:
             "HeaderRowType")
@@ -70,8 +72,14 @@ class StageController: WKInterfaceController {
                 let artist = artists[i - rows - 1]
                 controller.artistLabel.setText(artist.artistName!)
                 
-                let startHr = calendar.component(.hour, from: artist.startTime!)
-                let endHr = calendar.component(.hour, from: artist.endTime!)
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "h:mma"
+                dateFormatter.amSymbol = "AM"
+                dateFormatter.pmSymbol = "PM"
+                dateFormatter.timeZone = TimeZone(abbreviation: "PST")
+                
+                let startHr = dateFormatter.string(from: artist.startTime!)
+                let endHr = dateFormatter.string(from: artist.endTime!)
                 
                 controller.setTimeLabel.setText("\(startHr) - \(endHr)")
             }
